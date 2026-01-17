@@ -14,12 +14,6 @@ body {
     grid-template-rows: auto auto 1fr auto;
     font-family: acme, Arial, sans-serif;
 }
-footer {
-    background: rgb(49, 49, 49); 
-    color: white;
-    padding: 1rem;
-    text-align: center;  
-}
 #site-title {
     margin-bottom: 1rem;
 }
