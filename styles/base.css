@@ -7,7 +7,6 @@ header {
     color: white;
     padding: 1rem;
     text-align: center;
-    
 }
 body {
     display: grid;
@@ -19,8 +18,7 @@ footer {
     background: rgb(49, 49, 49); 
     color: white;
     padding: 1rem;
-    text-align: center;
-    
+    text-align: center;  
 }
 #site-title {
     margin-bottom: 1rem;
@@ -66,9 +64,7 @@ h1 {
 .card {
     padding: 1rem;
     outline: 2px solid goldenrod;
-    
 }
-
 .wrapper1 {
     display: flex;
     align-items: center;
@@ -106,6 +102,8 @@ footer {
     text-align: center;
     justify-content: center;
     gap: 20px;
-
+    background: rgb(49, 49, 49); 
+    color: white;
+    padding: 1rem; 
 }
 
