@@ -5,19 +5,60 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kira Billings | WDD 131 |</title>
-    <meta name="description" content="Kira Billings, WDD131.">
+    <title>WDD 131 - Dynamic Web Fundamentals - Kira Billings</title>
+    <meta name="description" content="Kira Billings, WDD 131, Dynamic Web Fundamentals, About Me, Web Dev Resources, Home">
     <meta name="author" content="Kira Billings">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
     <header>
-        Kira Billings WDD 131
+        <div id="site-title"> 
+            <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/kira-billings-a73647353/">My LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas BYU Pathway</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/6?lang=eng&id=p7#p7">Favorite Scripture</a></li>
+                <li>Final Project Folder Placeholder</li>
+            </ul>
+        </nav>
+        <h1>Kira Billings</h1>
     </header>
-
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="wrapper1">
+                <p>My name is Kira. I was born in Ogden, Utah, USA and live in Saint George, Utah. I currently work for the government but would love to work in graphic design. I am married with four sons, two daughters-in-law, and one grandson. I have one grandson. I love music, outdoors, sports, and creating. I also love traveling and learning.</p>
+                <img src="images/kira-headshot.jpg" alt="Kira Billings head shot"> 
+            </div>
+            <h3>Saint George, Utah</h3>
+            <div class="wrapper1">
+                <img src="images/us-utstg.jpg" alt="saint george utah flag">
+                <p>St. George, Utah is a fast‑growing desert city, known for its warm climate, red‑rock landscapes, and easy access to major outdoor recreation areas. Founded in 1861, it sits near the convergence of the Mojave Desert, Great Basin, and Colorado Plateau, giving it a uniquely varied environment. It offers many different activities and beautiful desert landscapes.</p>
+                
+            </div>
+           
+            
+            
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul class="webDev">
+                <li><a href="https://www.w3.org/developers/">W3 Consortium</a></li>
+                <li><a href="https://htmlreference.io/">HTML Reference</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML Learning Module</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS Learning Module</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting">JavaScript Learning Module</a></li>
+                <li><a href="https://pixabay.com/">Pixabay - Free Images</a></li>
+            </ul>
+        </section>
+    </main>
     <footer>
-        <p>&copy;2025 🌈 Kira Billings 🌈 Utah, USA</p>
+        <p>&copy;<span id="currentYear"></span> 🌈 Kira Billings 🌈 Utah, USA</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 
