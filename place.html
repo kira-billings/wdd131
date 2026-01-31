@@ -23,7 +23,7 @@
         <div class="hero">
             <picture>
                 <source srcset="images/zion-large.webp" media="(min-width: 1000px)">
-                <img src="images/zion-small.webp" alt="Zion National Park">
+                <img class="hero-image" src="images/zion-small.webp" alt="Zion National Park">
             </picture>
         </div>
         <div class="data">
@@ -50,12 +50,20 @@
         <div class="weather">
             <h2 class="weather-heading">Weather</h2>
             <img class="weather-icon-mobile" src="images/sun-solid.svg" alt="weather icon">
-            <ul class="list">
-                <li class="label">Temperature: 56&deg; F</li> 
-                <li class="label">Condition: Sunny</li> 
-                <li class="label">Wind: 5 mph</li> 
-                <li class="label">Wind Chill: 67&deg; F (Feels like)</li> 
-            </ul>
+            <div class="center-wrapper">
+                <ul class="right-aligned">
+                    <li class="label">Temperature:</li> 
+                    <li class="label">Condition: </li>
+                    <li class="label">Wind: </li> 
+                    <li class="label">Wind Chill: </li> 
+                </ul>
+                <ul class="left-aligned">
+                    <li> 56&deg; F</li> 
+                    <li>Sunny</li> 
+                    <li>5 mph</li> 
+                    <li>67&deg; F (Feels like)</li> 
+                </ul>
+            </div>
         </div>
     </main>
     <footer>
