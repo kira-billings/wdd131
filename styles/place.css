@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+header {
+    background: rgb(49, 49, 49); 
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto auto 1fr auto;
+    font-family: acme, Arial, sans-serif;
+}
+#site-title {
+    margin-bottom: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: white;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1rem;
+    background-color: rgb(167, 212, 243);
+    color: black;
+}
+
+/* .data .weather {
+    display: flex;
+    justify-content: center;
+} */
+
+.center-wrapper {
+    display: grid 1fr 1fr;
+    align-content: center;
+}
+.left-aligned li {
+    list-style: none;
+    text-align: left
+}
+.right-aligned li {
+    text-align: right;
+    list-style: none;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    fill: goldenrod
+}
+
+:root  {
+    --icon-size: 40px;
+    --accent: goldenrod;
+}
+.weather-icon-mobile { 
+    width: var(--icon-size); 
+    height: auto; 
+    vertical-align: middle; 
+}
+.weather-heading::after {
+     content: ""; 
+}
+@media (min-width: 800px) {
+    .weather-icon-mobile { 
+        display: none; 
+    } 
+    .weather-heading { 
+        position: relative; 
+        padding-right: calc(var(--icon-size) + 10px); 
+    }
+    .weather-heading::after {
+        content: "⛅"; 
+        position: absolute; 
+        right: 0; 
+        top: 50%; 
+        transform: translateY(-50%); 
+        font-size: var(--icon-size); 
+        color: var(--accent); 
+    } 
+}
+
+.wrapper1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+img {
+    width: 100px;
+    border: 1px solid black
+}
+p {
+    text-align: left;
+}
+h3, h2 {
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid goldenrod;
+}
+.webDev {
+    
+    margin: 0 auto;
+    width: fit-content;
+    list-style: none;
+    background-color: rgb(49, 49, 49);
+    text-align: left;
+    padding: 1rem;
+
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    background: rgb(49, 49, 49); 
+    color: white;
+    padding: 1rem; 
+}
+

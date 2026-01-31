@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Place - Zion</title>
+    <link href="styles/place.css" rel="place">
+    <meta name="description" content="Kira Billings, WDD 131, Favorite place, Zion National Park">
+    <meta name="author" content="Kira Billings">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Zion National Park</h1>
+        
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/zion-large.webp" media="(min-width: 1000px)">
+                <img src="images/zion-small.webp" alt="Zion National Park">
+            </picture>
+        </div>
+        <div class="data">
+            <h2>Data</h2>
+            <div class="center-wrapper">
+                <ul class="right-aligned">
+                    <li class="label">Location: </li>
+                    <li class="label">Established: </li>
+                    <li class="label">Size: </li>
+                    <li class="label">Elevation: </li>
+                    <li class="label">Peak Season: </li>
+                    <li class="label">Feature: </li>
+                </ul>
+                <ul class="left-aligned">
+                    <li> Southwestern Utah</li>
+                    <li> 1919</li>
+                    <li> 229 square miles</li>
+                    <li> 3,666–8,726 ft</li>
+                    <li> April–October</li>
+                    <li> Navajo Sandstone cliffs</li>
+                </ul>
+            </div>
+        </div>
+        <div class="weather">
+            <h2 class="weather-heading">Weather</h2>
+            <img class="weather-icon-mobile" src="images/sun-solid.svg" alt="weather icon">
+            <ul class="list">
+                <li class="label">Temperature: 56&deg; F</li> 
+                <li class="label">Condition: Sunny</li> 
+                <li class="label">Wind: 5 mph</li> 
+                <li class="label">Wind Chill: 67&deg; F (Feels like)</li> 
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"> 🌈 Kira Billings 🌈 Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
