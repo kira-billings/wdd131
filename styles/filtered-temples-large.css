@@ -9,15 +9,16 @@
 		object-position: center; 
 		display: block;
 	 } 
-	}
+	
 
 	h2 {
 		font-size: 2rem;
-		text-align: center;
+		/* text-align: center; */
 	}
 
 	#menu {
-		display: none; /* hide hamburger button */
+		display: none; 
+		/* hide hamburger button */
 	}
 
 	.navigation {
@@ -37,3 +38,5 @@
 		display: block;
 	}
 
+
+}
