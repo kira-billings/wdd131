@@ -18,12 +18,13 @@
 	}
 
 	.navigation {
-		flex-direction: row;
+		display: row;
 	}
 
 	.navigation a {
 		display: block;
 		flex: 1 1 100%;
+		
 	}
 
 

@@ -3,11 +3,13 @@
 	padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+
 body {
     display: grid;
     height: 100vh;
     grid-template-rows: auto auto 1fr auto;
 }
+
 header {
     background: rgb(49, 49, 49); 
     color: white;
@@ -15,6 +17,7 @@ header {
     /* text-align: center; */
     border-radius: 10px;
 }
+
 h1 {
     text-align: center;
     border-radius: 10px;
@@ -46,6 +49,7 @@ h1 {
 nav .navigation {
 	display: flex;
 	border-radius: 10px;
+    flex-direction: column;
 	justify-content: space-around;
 	list-style: none;
 	background-color: black;
@@ -53,19 +57,20 @@ nav .navigation {
 }
 
 .navigation a {
-	display: none;
+    display: none;
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
 	color: lightblue;
 }
+
 .navigation a:hover {
 	color: goldenrod;
     text-decoration: underline;
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
-.open a {
+.navigation.open a {
 	display: block;
 }
 
@@ -78,15 +83,17 @@ main {
 
 h2 {
     margin: 0 auto;
-    text-align: center;
+
     display: inline-block;
     padding-bottom: 4px;
 }
+
 .gallery {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
    gap: 1rem;
 }
+
 .temple-card { 
     background: white; 
     border-radius: 10px; 
@@ -105,7 +112,6 @@ h2 {
   border-radius: 8px;
   border: none;
 }
-
 
 footer {
     display: flex;
