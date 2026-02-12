@@ -25,19 +25,11 @@ body {
 }
 
 header {
-  text-align: center;
+  text-align: left;
   padding: .5rem 2%; 
 }
 
-@media (max-width: 600px) { 
-  h1 { 
-    text-align: left; 
-  } 
-}
-
-header h1 {
-  margin: 3px;
-}
+header h1 {margin: 0;}
 
 .roadsign {
   background: green;
@@ -51,6 +43,9 @@ header h1 {
   letter-spacing: 0.5px;
   box-shadow: 3px 3px 8px rgba(0,0,0,0.35);
 }
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 main {
     padding: 0 2%;
@@ -72,12 +67,11 @@ main {
 .pr1 input[type="text"],
 .pr1 input[type="date"],
 .pr1 input[type="submit"],
-.pr1 .largebox,
 .pr1 select {
     display: block;
     border: solid 1px #999;
     border-radius: 6px;
-    padding: .8rem;
+    padding: .75rem;
     width: 100%;
     max-width: 400px;
     appearance: auto;
@@ -91,6 +85,13 @@ main {
 }
 .pr1 span {
   font-style: italic;
+}
+.pr1 .largebox {
+  border-radius: 6px;
+  padding: .8rem;
+  width: 96%;
+  max-width: 400px;
+  box-shadow: 1px 1px 4px #999;
 }
 
 .pr1 .submit {

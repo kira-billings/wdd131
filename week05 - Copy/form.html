@@ -21,25 +21,24 @@
             <div class="response">
                 <label for="productName">Product name</label>
                     <select id="productName" name="productName" required>
-                        <option value="">Please Select &#9662;</option>
                     </select>
             </div>
             <div class="response">   
                 <div>Overall rating</div>
-                <label><input type="radio" name="overallRating" value="1" id="1-star" required>⭐</label>
-                <label><input type="radio" name="overallRating" value="2" id="2-star" required>⭐⭐</label>
-                <label><input type="radio" name="overallRating" value="3" id="3-star" required>⭐⭐⭐</label>
-                <label><input type="radio" name="overallRating" value="4" id="4-star" required>⭐⭐⭐⭐</label>
-                <label><input type="radio" name="overallRating" value="5" id="5-star" required>⭐⭐⭐⭐⭐</label>
+                <label><input type = "radio" name="overallRating" value="1" required>⭐</label>
+                <label><input type = "radio" name="overallRating" value="2">⭐⭐</label>
+                <label><input type = "radio" name="overallRating" value="3">⭐⭐⭐</label>
+                <label><input type = "radio" name="overallRating" value="4">⭐⭐⭐⭐</label>
+                <label><input type = "radio" name="overallRating" value="5">⭐⭐⭐⭐⭐</label>
             </div> 
             <div class="response">    
                 <label>Date of installation <input type="date" name="installation-date"></label>
             </div>
             <div class="features">Which features did you like? <span>(Check all that apply)</span>
-                <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
-                <label><input type="checkbox" id="ease-of-use" name="ease-of-use" value="yes"> Ease of use</label>
-                <label><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
-                <label><input type="checkbox" id="design" name="design" value="yes"> Design</label>
+                <label><input type="checkbox" name="durability" value="yes"> Durability</label>
+                <label><input type="checkbox" name="easeOfUse" value="yes"> Ease of use</label>
+                <label><input type="checkbox" name="performance" value="yes"> Performance</label>
+                <label><input type="checkbox" name="design" value="yes"> Design</label>
             </div>
             <div class="response">
                 <label>Written review <span>(Optional)</span>
@@ -50,7 +49,7 @@
                     <input type="text" name="name" autocomplete="name"></label>
             </div>
             <div class="response">
-                <input type="submit" value="Send product review" class="submit">
+                <input type="submit" value = "Send product review" class="submit">
             </div>
         </form>
     </main>
