@@ -36,10 +36,10 @@ header {
 }
 
 header h1 {
-  margin: 3px;
+  margin: 5px;
 }
 
-.roadsign {
+.roadSign {
   background: green;
   color: white;
   border-color: white;
@@ -58,21 +58,19 @@ main {
 }
 
 .pr1 label {
-    display: block;
-    padding-top: 1rem;
+  display: block;
+  padding-top: 1rem;
 }
 
 .pr1 .response {
-    padding-top: 1rem;
-}
-.pr1 .features {
-  padding-top: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pr1 input[type="text"],
 .pr1 input[type="date"],
 .pr1 input[type="submit"],
-.pr1 .largebox,
+.pr1 .largeBox,
 .pr1 select {
     display: block;
     border: solid 1px #999;
@@ -95,7 +93,7 @@ main {
 
 .pr1 .submit {
   background-color: var(--light3);
-  font-style: bold;
+  font-weight: bold;
 }
 
 footer {
