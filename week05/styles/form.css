@@ -70,7 +70,7 @@ main {
 .pr1 input[type="text"],
 .pr1 input[type="date"],
 .pr1 input[type="submit"],
-.pr1 .largeBox,
+.pr1 .large-box,
 .pr1 select {
     display: block;
     border: solid 1px #999;
