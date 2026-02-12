@@ -58,7 +58,7 @@ main {
 }
 
 .pr1 label {
-  display: block;
+ 
   padding-top: 1rem;
 }
 
@@ -83,9 +83,9 @@ main {
     box-sizing: border-box;
 }
 
-.pr1 input[type="radio"],
-.pr1 input[type="checkbox"] {
-    margin-right: 6px;
+.pr1 .option {
+  padding-top: 1rem;
+  margin-right: 6px;
 }
 .pr1 span {
   font-style: italic;
