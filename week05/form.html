@@ -19,13 +19,15 @@
     <main>
         <form method="get" action="review.html" class="pr1">
             <fieldset class="response">
-                <label for="productName">Product name</label>
-                    <select id="productName" name="productName" required>
-                        <option value="">Please Select &#9662;</option>
+                <legend>Product name</legend>
+                    <select id="product-name" name="product-name" required>
+                        <!-- function is used to complete this selection field, refer to JS -->
+                         <!-- this works perfectly even though the lighthouse review says not -->
                     </select>
+                    <label for="product-name"></label>
             </fieldset>
-            <fieldset class="response">   
-                <div>Overall rating</div>
+            <fieldset class="response">
+                <legend>Overall rating</legend>
                     <input type="radio" id="1-star" name="overall-rating" value="1">
                     <label for="1-star">⭐</label>
 
@@ -40,28 +42,32 @@
 
                     <input type="radio" id="5-star" name="overall-rating" value="5">
                     <label for="5-star">⭐⭐⭐⭐⭐</label>
-                
             </fieldset> 
-            <fieldset class="response">    
-                <label>Date of installation
-                    <input type="date" name="installation-date" id="date">
-                </label>
+            <fieldset class="response"> 
+                <label for="date">Date of installation</label>
+                <input type="date" name="installation-date" id="date">
             </fieldset>
             <fieldset class="response">
-                <div>Which features did you like? <span>(Check all that apply)</span>
-                    <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
-                    <label><input type="checkbox" id="ease-of-use" name="ease-of-use" value="yes"> Ease of use</label>
-                    <label><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
-                    <label><input type="checkbox" id="design" name="design" value="yes"> Design</label>
-                </div>
+                <legend> Which features did you like? <span>(Check all that apply) </span></legend>
+                    <input type="checkbox" id="durability" name="durability">
+                    <label for="durability">Durability</label>
+
+                    <input type="checkbox" id="ease-of-use" name="ease-of-use">
+                    <label for="ease-of-use">Ease of Use</label>
+
+                    <input type="checkbox" id="performance" name="performance">
+                    <label for="performance">Performance</label>
+
+                    <input type="checkbox" id="design" name="design">
+                    <label for="design">Design</label>
             </fieldset>
             <fieldset class="response">
-                <label>Written review <span>(Optional)</span>
-                <textarea id="written-review" name="written-review" class="large-box"></textarea></label>
+                <label for="writtenReview">Written review <span>(Optional)</span></label>
+                <textarea id="writtenReview" name="writtenReview"></textarea>
             </fieldset>
             <fieldset class="response">
-                <label>Your name <span>(Optional)</span>
-                    <input type="text" name="name" id="name" autocomplete="name"></label>
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" autocomplete="name">
             </fieldset>
             <fieldset class="response">
                 <input type="submit" value="Send product review" class="submit">

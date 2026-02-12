@@ -31,7 +31,7 @@ const products = [
   }
 ];
 
-const dropdown = document.querySelector("#productName");
+const dropdown = document.querySelector("#product-name");
 // placeholder option in drop down: needed for required
 
 dropdown.innerHTML = '<option value="" disabled selected>Select a product...</option>';
