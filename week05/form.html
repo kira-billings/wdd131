@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="product review form">
+    <meta name="author" content="Kira Billings">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="roadsign">Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="pr1">
+            <div class="response">
+                <label for="productName">Product name</label>
+                    <select id="productName" name="productName" required>
+                    </select>
+            </div>
+            <div class="response">   
+                <div>Overall rating</div>
+                <label><input type = "radio" name="overallRating" value="1" required>⭐</label>
+                <label><input type = "radio" name="overallRating" value="2">⭐⭐</label>
+                <label><input type = "radio" name="overallRating" value="3">⭐⭐⭐</label>
+                <label><input type = "radio" name="overallRating" value="4">⭐⭐⭐⭐</label>
+                <label><input type = "radio" name="overallRating" value="5">⭐⭐⭐⭐⭐</label>
+            </div> 
+            <div class="response">    
+                <label>Date of installation <input type="date" name="installation-date"></label>
+            </div>
+            <div class="features">Which features did you like? <span>(Check all that apply)</span>
+                <label><input type="checkbox" name="durability" value="yes"> Durability</label>
+                <label><input type="checkbox" name="easeOfUse" value="yes"> Ease of use</label>
+                <label><input type="checkbox" name="performance" value="yes"> Performance</label>
+                <label><input type="checkbox" name="design" value="yes"> Design</label>
+            </div>
+            <div class="response">
+                <label>Written review <span>(Optional)</span>
+                <textarea id="writtenReview" name="writtenReview" class="largebox"></textarea></label>
+            </div>
+            <div class="response">
+                <label>Your name <span>(Optional)</span>
+                    <input type="text" name="name" autocomplete="name"></label>
+            </div>
+            <div class="response">
+                <input type="submit" value = "Send product review" class="submit">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> 🌈 Kira Billings 🌈 Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
