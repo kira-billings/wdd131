@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="cor practical tips, safety advice, and local insights. ">
+  <meta name="author" content="Kira Billings">
+  <title>Desert Commuter Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/medium.css" media="(min-width: 37.5em)">
+  <link rel="stylesheet" href="styles/large.css" media="(min-width: 60em)">
+  <script src="scripts/desert-commuter.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="title"> 
+      <img src="images/desert-commuter-logo.webp" alt="desert commuter logo" class="logo"> 
+      <h1 class="roadSign">Desert Commuter</h1>
+      <button type="button" id="menu" aria-label="Open navigation menu"></button>
+    </div> 
+  </header>
+  <nav class="navigate">
+    <ul class="navigation">
+      <li><a href="desert-commuter-home">Home</a></li>
+      <li><a href="desert-commuter-gas-stations.html">Gas Stations</a></li>
+      <li><a href="desert-commuter-experiences">Experiences</a></li>
+      <li><a href="desert-commuter-contribute">Contribute</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <div class="hero">
+      <picture>
+        <source srcset="images/desert-freeway-large.webp" media="(min-width: 1000px)">
+        <source srcset="images/desert-freeway-medium.webp" media="(min-width: 550px)">
+        <img src="images/desert-freeway-small.webp" alt="freeway extending horizon" width="400" height="200" class="picture">
+      </picture>
+      <h2 class="hero-title">The Ultimate St. George ⇔ Las Vegas Commuter Guide</h2>
+    </div> 
+    <div class="shadow">
+      <h3 class=>About This Guide</h3>
+      <p class=>A personal, story-driven guide to commuting between St. George, Utah and Las Vegas, Nevada that blends lived experience with practical tips, safety advice, and local experiences.</p>
+    </div>
+<!-- weather -->
+    <section class="shadow">
+      <h3>Weather Comparison</h3>
+
+      <div id="weather-container" class="weather-grid">
+        <!-- Weather cards will be inserted here by JavaScript -->
+      </div>
+    </section>
+<!-- map -->
+    <!-- <section class="map-route">
+      <div id="traffic-container" class="traffic-grid">
+        <h3 class="roadsign">Current Traffic</h3>
+        <h4>SG to LV Southbound</h4>
+        <p><iframe src="https://embed.waze.com/iframe?zoom=16&lat=37.059709&lon=-113.581975&ct=livemap" width="600" height="450" allowfullscreen></iframe></p>
+        <h4>LV to SG Northbound</h4>
+        <p><iframe src="https://embed.waze.com/iframe?zoom=16&lat=36.240953&lon=-115.097842&ct=livemap" width="600" height="450" allowfullscreen></iframe></p>
+      </div>
+    </section> -->
+<!-- links -->
+    <section class="shadow">
+      <div id="link-container" class="link-grid">
+      <h3 class="roadsign">Interesting Links</h3>
+        <ul class="webDev">
+          <li><a href="https://weatherspark.com/compare/y/2380~2228/Comparison-of-the-Average-Weather-in-Saint-George-and-Las-Vegas">Compare the Climate SG ⇔ LV</a></li>
+          <li><a href="https://www.facebook.com/groups/2080635595378460/">Pain in the Gorge - Facebook group</a></li>
+          <li><a href="https://azdot.gov/blog-article/road-trip-i-15-virgin-river-corridor-hidden-engineering-marvel?utm_source=copilot.com">Road Trip: The I-15 Virgin River Corridor is a hidden engineering marvel</a></li>
+          <li><a href="https://mysteryofutahhistory.blogspot.com/2017/08/interstate-through-virgin-river-gorge.html?utm_source=copilot.com">Mystery of Utah History - Virgin Gorge</a></li>
+          <li><a href="https://www.navbug.com/traffic-cams/nevada/i-15.htm">Nevada Traffic Cameras</a></li>
+          <li><a href="https://engineerfix.com/what-do-the-ac-buttons-in-your-car-actually-mean/">Air Source and Temperature Management for Your Car</a></li>  
+        </ul>
+      </div>
+    </section>
+    
+    
+  
+  </main>
+
+  <footer class="shadow">
+    <p>&copy;<span id="currentYear"></span> 🌈 Kira Billings 🌈 Utah, USA</p>
+    <a href="desert-commuter-references.html">References</a>
+  </footer>
+
+</body>
+</html>

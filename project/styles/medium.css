@@ -1,0 +1,35 @@
+
+
+/* Hide hamburger */
+#menu {
+  display: none;
+}
+
+/* NAVIGATION becomes visible*/
+nav .navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  background: #333;
+  background: none;
+}
+
+.navigation a {
+  display: flex;
+  color: white;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  background: #333;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.35);
+}
+
+.navigate {
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+

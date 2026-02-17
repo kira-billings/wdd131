@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="cor practical tips, safety advice, and local insights. ">
+    <meta name="author" content="Kira Billings">
+    <title>Contribute</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css" media="(min-width: 37.5em)">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 60em)">
+  <script src="scripts/desert-commuter.js" defer></script>
+</head>
+<body>
+
+    <header>
+    <div class="title"> 
+      <img src="images/desert-commuter-logo.webp" alt="desert commuter logo" class="logo"> 
+      <h1 class="roadSign">Desert Commuter</h1>
+      <button type="button" id="menu" aria-label="Open navigation menu"></button>
+    </div> 
+  </header>
+  <nav class="navigate">
+    <ul class="navigation">
+      <li><a href="desert-commuter-home">Home</a></li>
+      <li><a href="desert-commuter-gas-stations.html">Gas Stations</a></li>
+      <li><a href="desert-commuter-experiences">Experiences</a></li>
+      <li><a href="desert-commuter-contribute">Contribute</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="shadow">
+    <h2>Contribute Your Experience</h2>
+    <p>Do you have an interesting experience, tip, insight, question or recommendation? Send me your contribution and I may add it to this site.</p>
+    <form method="get" action="thanks.html" class="contribution">
+
+            <fieldset class="response">
+                <legend>Contribution Type</legend>
+                    <div class="option"> 
+                        <input type="radio" id="experience" name="contribution-type" value="1" required>
+                        <label for="Experience">Experience</label>
+                    </div> 
+                    <div class="option">      
+                        <input type="radio" id="helpful-tip" name="contribution-type" value="2" required>
+                        <label for="helpful-tip">Helpful tip</label>
+                    </div> 
+                    <div class="option"> 
+                        <input type="radio" id="local-insight" name="contribution-type" value="3" required>
+                        <label for="local-insight">Local insight</label>
+                    </div>  
+                    <div class="option"> 
+                        <input type="radio" id="question" name="contribution-type" value="4" required>
+                        <label for="Question">Question</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="recommendation" name="contribution-type" value="5" required>
+                        <label for="while-driving">Recommendation</label>
+                    </div> 
+            </fieldset> 
+
+            <fieldset class="response">
+                <legend> What is your contribution about? <span>(Check all that apply) </span></legend>
+                    <div class="option">
+                        <input type="checkbox" id="design" name="accident">
+                        <label for="accident">Accident</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="entertainment" name="entertainment">
+                        <label for="entertainment">Entertainment</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="pit-stop" name="pit-stop">
+                        <label for="pit-stop">Pit Stop</label>
+                    </div>
+                    <div class="option">    
+                        <input type="checkbox" id="road-condition" name="road-condition">
+                        <label for="road-condition">Road condition</label>
+                    </div> 
+                    <div class="option">
+                        <input type="checkbox" id="view" name="view">
+                        <label for="view">Scenic view</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="traffic" name="traffic">
+                        <label for="traffic">Traffic</label>
+                    </div> 
+                    <div class="option">
+                        <input type="checkbox" id="weather" name="weather">
+                        <label for="weather">Weather</label>
+                    </div> 
+            </fieldset>
+            <fieldset class="response">
+                <label for="comments">Enter your contribution comments</label>
+                <textarea class="large-box" id="comments" name="comments"></textarea>
+            </fieldset>
+            <fieldset class="response">
+                <label for="name">Your name <span>(Optional)</span></label>
+                <input type="text" id="name" name="name" autocomplete="name">
+            </fieldset>
+            <fieldset class="response">
+                <label for="name">Your email <span>(Optional)</span></label>
+                <input type="email" id="email" name="email" autocomplete="email">
+            </fieldset>
+            <fieldset class="response">
+                <input type="submit" value="Send your contribution" class="submit">
+            </fieldset>
+        </form>
+    </section>
+  </main>
+
+  <footer class="shadow">
+    <p>&copy;<span id="currentYear"></span> 🌈 Kira Billings 🌈 Utah, USA</p>
+    <a href="desert-commuter-references.html">References</a>
+  </footer>
+
+</body>
+</html>
