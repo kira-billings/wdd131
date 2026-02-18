@@ -30,20 +30,21 @@ loadWeather();
 
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.header-nav');
-
+if (hamButton && navigation) {
 hamButton.addEventListener('click', () => {
 	  navigation.classList.toggle('open');
 	  hamButton.classList.toggle('open');
 });
+}
 
 const hamButton2 = document.querySelector('#menu2');
 const navigation2 = document.querySelector('.sort-nav');
-
+if (hamButton2 && navigation2) {
 hamButton2.addEventListener('click', () => {
 	  navigation2.classList.toggle('open');
 	  hamButton2.classList.toggle('open');
 });
-
+}
 
 const gasStations = [
   {
@@ -189,6 +190,7 @@ createGasCard(gasStations);
 
 // Biggest size
 const biggestLink = document.querySelector("#biggest");
+if (biggestLink) {
 biggestLink.addEventListener("click", () => {
   setActiveSort(biggestLink);
   const sizeOrder = {
@@ -199,44 +201,50 @@ biggestLink.addEventListener("click", () => {
   };
   createGasCard(gasStations.sort((a, b) => sizeOrder[b.size] - sizeOrder[a.size]));
 });
+}
 
 // City
 const cityLink = document.querySelector("#city");
+if (cityLink) {
 cityLink.addEventListener("click", () => {
   setActiveSort(cityLink);
   createGasCard(
     gasStations.sort((a, b) => a.city.localeCompare(b.city))
   );
 });
-
+}
 
 // Exit Number
 const exitLink = document.querySelector("#exit-number");
+if (exitLink) {
 exitLink.addEventListener("click", () => {
   setActiveSort(exitLink);
   createGasCard(
     gasStations.sort((a, b) => a.exit - b.exit)
   );
 });
+}
 
 // Highest rated
 const highestRatedLink = document.querySelector("#highest-rated");
+if (highestRatedLink) {
 highestRatedLink.addEventListener("click", () => {
   setActiveSort(highestRatedLink);
   createGasCard(
     gasStations.sort((a, b) => b.rating - a.rating)
   );
 });
-
+}
 // Nearest to ST. GEorge
 const nearestLink = document.querySelector("#nearest-saint-george");
+if (nearestLink) {
 nearestLink.addEventListener("click", () => {
   setActiveSort(nearestLink);
   createGasCard(
     gasStations.sort((a, b) => a.distanceFromStart - b.distanceFromStart)
   );
 });
-
+}
 // All sort links
 const sortLinks = document.querySelectorAll(".gas a");
 
@@ -248,6 +256,7 @@ function setActiveSort(clickedLink) {
 
 function createGasCard(stations) {
     const gallery = document.querySelector(".gallery");
+    if (gallery) {
     gallery.innerHTML = ""; // Clear previous cards
 
     stations.forEach(station => {
@@ -284,6 +293,7 @@ function createGasCard(stations) {
         gallery.appendChild(card);
     });
 }
+}
 
 // visits counter
 
@@ -304,6 +314,5 @@ else {
 numVisits++;
 localStorage.setItem("numVisits-ls", numVisits);
 }
-
 
 
