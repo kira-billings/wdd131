@@ -1,35 +1,53 @@
 
-
-/* Hide hamburger */
-#menu {
+/* Hide hamburger buttons on medium+ */
+#menu, #menu2 {
   display: none;
 }
 
-/* NAVIGATION becomes visible*/
-nav .navigation {
+/* Show nav containers on medium+ */
+.header-nav,
+.sort-nav,
+.experience-nav {
+  display: block;
+}
+
+
+/* Horizontal navigation */
+.navigation,
+.gas,
+.exp {
   display: flex;
   flex-direction: row;
+
   gap: 2rem;
   list-style: none;
   padding: 0;
-  margin: 1rem 0 0 0;
-  background: #333;
   background: none;
+  justify-content: center;
+  margin-top: 1rem;
 }
-
-.navigation a {
+.exp {
+  flex-wrap: wrap
+}
+/* Nav links */
+.navigation a,
+.gas a,
+.exp a {
   display: flex;
   color: white;
   padding: .5rem 1rem;
   text-decoration: none;
-  background: #333;
+  background: var(--freeway);
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 3px 3px 8px rgba(0,0,0,0.35);
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: auto;
 }
 
-.navigate {
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-}
+
+
+
 

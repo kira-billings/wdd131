@@ -16,44 +16,45 @@
 </head>
 
 <body>
-    <header>
-    <div class="title"> 
+
+  <header>
+    <div class="header-div">
       <img src="images/desert-commuter-logo.webp" alt="desert commuter logo" class="logo"> 
-      <h1 class="roadSign">Desert Commuter</h1>
-      <button type="button" id="menu" aria-label="Open navigation menu"></button>
-    </div> 
+      <h1>Desert Commuter</h1>
+      <button type="button" id="menu" aria-label="Open navigation menu" aria-expanded="false"
+  aria-controls="primary-navigation"></button>
+    </div>
+    <nav class="header-nav">
+      <ul class="navigation" id="primary-navigation">
+        <li><a href="desert-commuter-home.html">Home</a></li>
+        <li><a href="desert-commuter-gas-stations.html" class="active">Gas Stations</a></li>
+        <li><a href="desert-commuter-experiences.html">Experiences</a></li>
+        <li><a href="desert-commuter-contribute.html">Contribute</a></li>
+      </ul>
+    </nav>
   </header>
-  <nav class="navigate">
-    <ul class="navigation">
-      <li><a href="desert-commuter-home">Home</a></li>
-      <li><a href="desert-commuter-gas-stations.html">Gas Stations</a></li>
-      <li><a href="desert-commuter-experiences">Experiences</a></li>
-      <li><a href="desert-commuter-contribute">Contribute</a></li>
-    </ul>
-  </nav>
-
+  
   <main>
-    <section id="gas-stations" class="gas-stations">
-      <h2>Sorting Gas Stations</h2>
-
-      <button type="button" id="menu" aria-label="Open navigation menu"></button>
-
-      <div class="sorting-menu">
-        <ul class="navigation">
-          <li><a href="#" id="nearest-saint-george">Nearest Saint George</a></li>
+      <div class="gas-div">
+        <h2 class="roadSign">Sorting Gas Stations</h2>
+        <button type="button" id="menu2" aria-label="Open sorting menu" class="sort-button"></button>
+      </div>
+      <div class="sort-nav">
+        <ul class="gas">
           <li><a href="#" id="biggest">Biggest</a></li>
+          <li><a href="#" id="city">City</a></li>
           <li><a href="#" id="exit-number">Exit Number</a></li>
           <li><a href="#" id="highest-rated">Highest Rated</a></li>
+          <li><a href="#" id="nearest-saint-george">Nearest</a></li>
         </ul>
       </div>
 
       <div class="gallery"> 
-          
+            
       </div>
-    </section>
   </main>
 
-  <footer>
+  <footer class="shadow">
     <p>&copy;<span id="currentYear"></span> 🌈 Kira Billings 🌈 Utah, USA</p>
     <a href="desert-commuter-references.html">References</a>
   </footer>

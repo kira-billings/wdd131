@@ -16,21 +16,22 @@
 </head>
 <body>
 
-    <header>
-    <div class="title"> 
+  <header>
+    <div class="header-div">
       <img src="images/desert-commuter-logo.webp" alt="desert commuter logo" class="logo"> 
-      <h1 class="roadSign">Desert Commuter</h1>
-      <button type="button" id="menu" aria-label="Open navigation menu"></button>
-    </div> 
+      <h1>Desert Commuter</h1>
+      <button type="button" id="menu" aria-label="Open navigation menu" aria-expanded="false"
+  aria-controls="primary-navigation"></button>
+    </div>
+    <nav class="header-nav">
+      <ul class="navigation" id="primary-navigation">
+        <li><a href="desert-commuter-home.html">Home</a></li>
+        <li><a href="desert-commuter-gas-stations.html">Gas Stations</a></li>
+        <li><a href="desert-commuter-experiences.html">Experiences</a></li>
+        <li><a href="desert-commuter-contribute.html" class="active">Contribute</a></li>
+      </ul>
+    </nav>
   </header>
-  <nav class="navigate">
-    <ul class="navigation">
-      <li><a href="desert-commuter-home">Home</a></li>
-      <li><a href="desert-commuter-gas-stations.html">Gas Stations</a></li>
-      <li><a href="desert-commuter-experiences">Experiences</a></li>
-      <li><a href="desert-commuter-contribute">Contribute</a></li>
-    </ul>
-  </nav>
 
   <main>
     <section class="shadow">

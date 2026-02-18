@@ -2,11 +2,18 @@ header {
   padding: 2rem 3rem;
 }
 
+header,
+main,
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .logo {
   width: 100px;
 }
 
-h1 {
+.roadSign {
   font-size: 2.5rem;
 }
 
@@ -17,4 +24,10 @@ h1 {
 .navigation a {
   font-size: 1.2rem;
   padding: .75rem 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+main {
+  padding: 2rem 3rem;
 }
