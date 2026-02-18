@@ -36,9 +36,7 @@ h1 {
 
 @media (min-width: 800px) {
     .hero {
-        width: 100vw; /* full viewport width */
-        margin-left: 50%;
-        transform: translateX(-50%);  /* centers the full-width block */
+        width: 100%; /* full viewport width */
     } 
     .hero-image { 
         width: 100%; 
@@ -47,7 +45,6 @@ h1 {
     } 
 }
 
-
 .center-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -55,7 +52,7 @@ h1 {
 }
 .left-aligned li {
     list-style: none;
-    text-align: left
+    text-align: left;
 }
 .right-aligned li {
     text-align: right;
@@ -65,7 +62,7 @@ h1 {
 .icon {
     width: 40px;
     height: 40px;
-    fill: goldenrod
+    fill: goldenrod;
 }
 
 :root  {
@@ -84,16 +81,15 @@ h1 {
     .weather-icon-mobile { 
         display: none; 
     } 
-    .weather-heading { 
-        position: relative; 
-        padding-right: calc(var(--icon-size) + 10px); 
+    .weather-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     }
+
     .weather-heading::after {
         content: "⛅"; 
-        position: absolute; 
-        right: 0; 
-        top: 50%; 
-        transform: translateY(-50%); 
         font-size: var(--icon-size); 
         color: var(--accent); 
     } 
@@ -104,20 +100,15 @@ h1 {
     align-items: center;
     gap: 20px;
 }
-img {
-    width: 100px;
-    border: 1px solid black
-}
+
 p {
     text-align: left;
 }
 h3, h2 {
-    margin: 0 auto;
     text-align: center;
-    display: inline-block;
+    border-bottom: 1px solid goldenrod;
     padding-bottom: 4px;
     margin-bottom: 10px;
-    border-bottom: 1px solid goldenrod;
 }
 .webDev {
     
